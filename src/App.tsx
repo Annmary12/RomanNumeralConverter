@@ -33,11 +33,11 @@ const App = () => {
       if (res == NaN || !res) {
         throw new Error('Please ensure you select the approiate conversion')
       }
-      setResult(res)
       setValue('')
     } catch(err) {
       error = err.message || err
     }
+    setResult(res)
     setError(error)
   }
   return (
@@ -53,7 +53,7 @@ const App = () => {
             name='convertInput' 
             value={value} 
             onChange={handleOnchange}
-            buttonLabel='Submit'
+            buttonLabel='Convert'
             handleSubmit={handleSubmit}
             placeholder='Enter a value'/>
             { result &&  <Alert color="success" style={{ marginTop: "20px" }}>

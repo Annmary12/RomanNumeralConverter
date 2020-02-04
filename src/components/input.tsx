@@ -26,8 +26,8 @@ const InputComponent: React.FC<IProps> = ({ name, onChange, value, placeholder, 
               {buttonLabel}
             </DropdownToggle>
             <DropdownMenu>
-              <DropdownItem onClick={handleSubmit ('romans')}>Convert To Roman</DropdownItem>
-              <DropdownItem onClick={handleSubmit('integer')}>Convert To Number</DropdownItem>
+              <DropdownItem onClick={handleSubmit ('romans')}>To Roman</DropdownItem>
+              <DropdownItem onClick={handleSubmit('integer')}>To Number</DropdownItem>
             </DropdownMenu>
           </InputGroupButtonDropdown>
     </InputGroup>
